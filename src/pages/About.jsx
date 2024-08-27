@@ -9,7 +9,7 @@ const About = () => {
           <h1 className="text-stroke-lg text-shadow-md font-title text-4xl md:text-7xl text-red-10 z-30 whitespace-nowrap">
             ABOUT JASTEN SAN
           </h1>
-          <p className=" text-red-900 text-2xl font-extrabold tracking-wider mt-7">
+          <p className=" text-red-900 text-2xl font-extrabold tracking-wider mt-7 text-center md:text-left">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio at
             fuga incidunt nihil ipsam, nemo eaque veniam qui architecto aut,
             modi exercitationem, perferendis pariatur dolor adipisci! Doloremque
