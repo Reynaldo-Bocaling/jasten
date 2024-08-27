@@ -5,7 +5,7 @@ const Tokenomics = () => {
   return (
     <section id="tokenomics" className="relative w-full">
       <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center py-12 px-12 z-30">
-        <h1 className="text-stroke-lg text-shadow-md font-title text-6xl md:text-8xl text-red-10 z-30 whitespace-nowrap mb-7 md:mb-0">
+        <h1 className="text-stroke-lg text-shadow-md font-title text-6xl md:text-8xl text-red-10 z-30 whitespace-nowrap mb-7 md:mb-0 whitespace-nowrap">
           TOKENOMICS
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center gap-7">

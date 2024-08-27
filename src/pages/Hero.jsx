@@ -9,7 +9,7 @@ const Hero = () => {
     <section id="hero" className="relative w-full">
       <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center gap-5  pb-9 md:pb-0">
         <Header />
-        <h1 className="text-stroke-lg text-shadow-lg font-title text-7xl md:text-14xl text-red-10 z-30 mt-9">
+        <h1 className="text-stroke-lg text-shadow-lg font-title text-7xl md:text-14xl text-red-10 z-30 mt-9 whitespace-nowrap">
           JASTEN SAN
         </h1>
         <img
