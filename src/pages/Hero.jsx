@@ -7,7 +7,7 @@ import { IoArrowDown } from "react-icons/io5";
 const Hero = () => {
   return (
     <section id="hero" className="relative w-full">
-      <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center gap-5  ">
+      <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center gap-5  pb-9 md:pb-0">
         <Header />
         <h1 className="text-stroke-lg text-shadow-lg font-title text-7xl md:text-14xl text-red-10 z-30 mt-9">
           JASTEN SAN
@@ -34,7 +34,7 @@ const Hero = () => {
             <IoArrowDown size={30} />
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center gap-5 -mt-7 md:-mt-20 z-20">
+        <div className="flex flex-col items-center justify-center gap-5 -mt-7 md:-mt-20 z-20 ">
           <h1 className="text-stroke-sm text-shadow-md font-title text-3xl text-white z-30">
             CONTRACT ADDRESS
           </h1>

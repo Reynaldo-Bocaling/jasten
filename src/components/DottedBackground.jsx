@@ -6,7 +6,7 @@ const DottedBackground = () => {
   ));
 
   return (
-    <div className="w-full h-[45rem] absolute top-0 left-0 overflow-hidden  grid grid-cols-[repeat(auto-fill,_minmax(10px,_1fr))] grid-rows-[repeat(auto-fill,_minmax(10px,_1fr))] opacity-25 gap-2 z-[1]">
+    <div className="w-full h-[30rem] md:h-[45rem] absolute top-0 left-0 overflow-hidden  grid grid-cols-[repeat(auto-fill,_minmax(10px,_1fr))] grid-rows-[repeat(auto-fill,_minmax(10px,_1fr))] opacity-25 gap-2 z-[1]">
       {dots}
     </div>
   );
