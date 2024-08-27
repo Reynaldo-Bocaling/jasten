@@ -32,7 +32,7 @@ const About = () => {
       /> */}
       <img
         src="/img/footer-bg.png"
-        className="relative w-full -mt-7 md:-mt-16 z-30"
+        className="relative w-full -mt-5 md:-mt-16 z-30"
         alt=""
       />
     </section>
