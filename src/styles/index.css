@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+
+@font-face {
+    font-family: 'title-font';
+    src: url('../assets/fonts/title-font.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'extra-font';
+    src: url('../assets/fonts/extra-font.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'regular-font';
+    src: url('../assets/fonts/regular-font.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "regular-font", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+.font-title {
+    font-family: "title-font";
+}
+
+.text-stroke-xs {
+    -webkit-text-stroke: 0.7px #121212;
+}
+
+.text-stroke-sm {
+    -webkit-text-stroke: 1px #121212;
+}
+
+.text-stroke-md {
+    -webkit-text-stroke: 1.5px #121212;
+}
+
+.text-stroke-lg {
+    -webkit-text-stroke: 2px #121212;
+}
+
+
+.text-shadow-sm {
+    text-shadow: 3px 3px 0px black;
+}
+
+.text-shadow-md {
+    text-shadow: 5px 5px 0px black;
+}
+
+.text-shadow-lg {
+    text-shadow: 10px 10px 0px black;
+}
+
+.btn {
+    background-color: rgb(249, 22, 22);
+    box-shadow: 0px 7px 0 rgb(216, 29, 8), 0px -3px 0 rgb(250, 110, 94);
+}
+
+.box-shadow-sm {
+    box-shadow: 5px 5px 0px #232323;
+}
+
+.blur-effect {
+    background: rgba(247, 142, 142, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+/* 
+#hero::before {
+
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -220px;
+    width: 800px;
+    height: 600px;
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(263, 38%, 24%, 0.7),
+            transparent 64%);
+    z-index: -1;
+
+    
+
+    */
+
+
+
+@media (max-width: 768px) {
+    .text-shadow-lg {
+        text-shadow: 5px 5px 0px black;
+    }
+}
