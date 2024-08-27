@@ -18,7 +18,7 @@ const Hero = () => {
           alt=""
         />
         {/* socials */}
-        <div className="absolute top-64 right-5 hidden md:flex flex-col items-end justify-center gap-9  z-30">
+        <div className="absolute top-64 right-5 hidden  md:flex md:flex-col items-end justify-center gap-9  z-30">
           {socials.slice(2, 5)?.map((item, index) => (
             <a
               href={item.url}
@@ -28,11 +28,6 @@ const Hero = () => {
               <img src={item.img} className="w-12 h-12 z-30" alt="link icons" />
             </a>
           ))}
-
-          <button className="bg-red-10 text-red-200 text-2xl font- font-title py-3 px-7 rounded-full flex items-center gap-3">
-            Tokenomics
-            <IoArrowDown size={30} />
-          </button>
         </div>
         <div className="flex flex-col items-center justify-center gap-5 -mt-7 md:-mt-20 z-20 ">
           <h1 className="text-stroke-sm text-shadow-md font-title text-3xl text-white z-30">
