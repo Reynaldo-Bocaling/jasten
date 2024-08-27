@@ -24,14 +24,15 @@ const Tokenomics = () => {
               </li>
             ))}
           </ul>
-          <img src="/img/tokenomics.png" alt="" className="w-full md:w-1/2" />
+          <div className="relative  w-full md:w-1/2">
+            <img src="/img/tokenomics.png" alt="" className="w-full " />
+            <img
+              src="/img/logo.png"
+              className="w-full md:w-[40rem] absolute top-1/2 -translate-y-1/2 right-0 z-[-1] opacity-10 -mt-28"
+              alt=""
+            />
+          </div>
         </div>
-
-        <img
-          src="/img/logo.png"
-          className="w-[40rem] absolute top-1/2 -translate-y-1/2 right-0 z-[-1] opacity-10"
-          alt=""
-        />
       </div>
     </section>
   );

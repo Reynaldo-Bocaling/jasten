@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { navlinks, socials } from "../constant";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { CgMenuRight } from "react-icons/cg";
+import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,30 +43,34 @@ const Header = () => {
           </button>
         </div>
         <button onClick={handleMenu} className="md:hidden">
-          <CgMenuRight size={40} className="text-yellow-10 " />
+          <CgMenuRight size={40} className="text-red-10 " />
         </button>
       </nav>
 
       {isOpen && (
-        <nav className="shadow-effect fixed top-0 left-0 bottom-0 w-9/12 bg-[#9bc1fa]  z-[999] py-5 md:hidden flex flex-col items-center justify-start duration-300 transition-all">
-          <div className="flex items-center mb-20">
-            <h1 className="text-stroke-sm text-yellow-10 text-7xl font-bold ">
-              $TSUJI
-            </h1>
+        <nav className="shadow-effect fixed left-0 bottom-0 w-full h-full  z-[999] blur-effect-dark py-5 md:hidden flex flex-col items-center justify-start duration-300 transition-all border-4 border-red-10 rounded-3xl overflow-hidden">
+          <div className="flex items-center justify-between   mb-20 w-full blur-effects rounded-full bg-[#e7d0af] py-4 px-7">
+            <h1 className="text-stroke-sm text-shadow-sm font-title text-3xl text-red-10  flex items-center  ">
+              <img src="/img/logo.png" className="w-12" alt="logo" />
+              JASTEN SAN
+            </h1>{" "}
+            <button onClick={handleMenu} className="md:hidden ">
+              <FaTimes size={40} className="text-red-10 " />
+            </button>
           </div>
 
-          <ul className="flex flex-col items-center justify-center gap-9">
+          <ul className="flex flex-col items-center justify-center gap-12">
             {navlinks.map((item, index) => (
               <li key={index} onClick={() => setIsOpen(false)}>
                 <a
                   href={item.url}
-                  className="text-stroke-sm text-sky-blue text-4xl font-bold"
+                  className="text-black text-3xl font-extralight font-title tracking-wider"
                 >
                   {item.label}
                 </a>
               </li>
             ))}
-            <button className="shadow-effect text-white text-2xl font-semibold bg-yellow-10 py-3 px-12  rounded-xl mt-10">
+            <button className="btn text-xl font-title text-red-200 py-4 px-20 rounded-2xl mt-12">
               Buy Now
             </button>
           </ul>

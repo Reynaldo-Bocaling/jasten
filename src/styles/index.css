@@ -80,23 +80,10 @@
     backdrop-filter: blur(5px);
 }
 
-/* 
-#hero::before {
-
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -220px;
-    width: 800px;
-    height: 600px;
-    border-radius: 20%;
-    background: radial-gradient(ellipse at center, hsla(263, 38%, 24%, 0.7),
-            transparent 64%);
-    z-index: -1;
-
-    
-
-    */
+.blur-effect-dark {
+    background: rgba(246, 192, 125, 0.6);
+    backdrop-filter: blur(10px);
+}
 
 
 
